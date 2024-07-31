@@ -1,0 +1,18 @@
+server:
+  port: 7001
+
+spring:
+  jpa:
+    open-in-view: false
+    datasource: primary
+  hibernate:
+    ddl-auto: create-drop
+  datasource:
+    driverClassName: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@172.22.147.179:1521/freepdb1
+    username: BANKSECURITY
+    password: password123
+
+app:
+  jwt:
+    secret: abcdefghijklmnOPQRSTUVWXYZabcdefghijklmnOPQRSTUVWXYZabcdefghijklmnOPQRSTUVWXYZabcdefghijklmnOPQRSTUVWXYZabcdefghijklmnOPQRSTUVWXYZabcdefghijklmnOPQRSTUVWXYZabcdefghijklmnOPQRSTUVWXYZ
