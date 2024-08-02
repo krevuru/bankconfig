@@ -31,7 +31,7 @@ eureka:
     service-url:
       defaultZone: http://localhost:7000/eureka/
 
-bankmanagement:
+bankamanagement:
   dbtype:
     nosql: true
 
