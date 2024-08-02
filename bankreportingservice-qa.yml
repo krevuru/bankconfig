@@ -1,0 +1,18 @@
+bank:
+  management:
+    url: http://localhost:9001
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka/
+
+logging:
+  level:
+    com:
+      bankmanagement: trace
+  file:
+    name: build/bankreportingservice-qa.log
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+

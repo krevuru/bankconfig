@@ -6,3 +6,13 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:7000/eureka/
+
+logging:
+  level:
+    com:
+      bankmanagement: trace
+  file:
+    name: build/bankreportingservice-sit.log
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+
