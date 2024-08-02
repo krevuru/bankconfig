@@ -22,7 +22,7 @@ eureka:
 logging:
   level:
     com:
-      bankmanagement: info
+      bankjwtservice: info
   file:
     name: build/bankjwtservice-sit.log
   pattern:
