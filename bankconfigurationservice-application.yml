@@ -1,19 +1,15 @@
 server:
-  port: 7002
+  port: '7002'
 
-spring:
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka/
 
-  application:
-    name: config-server
-
-  cloud:
-    config:
-      server:
-        git:
-          clone-on-start: true
-          uri: https://github.com/krevuru/bankconfig.git
-
+management:
   security:
-    user:
-      name: root
-      password: secret
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: refresh
