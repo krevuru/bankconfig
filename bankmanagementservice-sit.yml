@@ -9,7 +9,6 @@ spring:
     url: jdbc:oracle:thin:@172.22.147.179:1521/freepdb1
     username: BANK_MANAGEMENT
     password: password1
-
   data:
     mongodb:
       host: 172.22.147.179
