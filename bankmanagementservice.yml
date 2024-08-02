@@ -4,15 +4,9 @@ server:
 spring:
   application:
     name: bankmanagementservice
-  profiles:
-    active: sit
 
-logging:
-  level:
-    com:
-      bankmanagement: trace
-  file:
-    name: build/bankmanagement.log
-  pattern:
-    file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh

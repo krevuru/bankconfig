@@ -4,27 +4,9 @@ server:
 spring:
   application:
     name: bankjwtservice
-  jpa:
-    open-in-view: false
-    datasource: primary
-  hibernate:
-    ddl-auto: create-drop
-  datasource:
-    driverClassName: oracle.jdbc.OracleDriver
-    url: jdbc:oracle:thin:@172.22.147.179:1521/freepdb1
-    username: BANKSECURITY
-    password: password123
-
-app:
-  jwt:
-    secret: abcdefghijklmnOPQRSTUVWXYZabcdefghijklmnOPQRSTUVWXYZabcdefghijklmnOPQRSTUVWXYZabcdefghijklmnOPQRSTUVWXYZabcdefghijklmnOPQRSTUVWXYZabcdefghijklmnOPQRSTUVWXYZabcdefghijklmnOPQRSTUVWXYZ
 
 management:
   endpoints:
     web:
       exposure:
         include: refresh
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:7000/eureka/

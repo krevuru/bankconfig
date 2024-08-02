@@ -22,9 +22,9 @@ eureka:
 logging:
   level:
     com:
-      bankmanagement: trace
+      bankmanagement: info
   file:
-    name: build/bankjwtservice-dev.log
+    name: build/bankjwtservice-sit.log
   pattern:
     file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
 

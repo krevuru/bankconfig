@@ -9,6 +9,7 @@ spring:
     url: jdbc:oracle:thin:@172.22.147.179:1521/freepdb1
     username: BANK_MANAGEMENT
     password: password1
+
   data:
     mongodb:
       host: 172.22.147.179
@@ -33,3 +34,17 @@ eureka:
 bankamanagement:
   dbtype:
     nosql: true
+
+
+app:
+  jwt:
+    secret: abcdefghijklmnOPQRSTUVWXYZabcdefghijklmnOPQRSTUVWXYZabcdefghijklmnOPQRSTUVWXYZabcdefghijklmnOPQRSTUVWXYZabcdefghijklmnOPQRSTUVWXYZabcdefghijklmnOPQRSTUVWXYZabcdefghijklmnOPQRSTUVWXYZ
+
+logging:
+  level:
+    com:
+      bankmanagement: info
+  file:
+    name: build/bankmanagement-sit.log
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"

@@ -24,7 +24,7 @@ logging:
     com:
       bankmanagement: trace
   file:
-    name: build/bankjwtservice-dev.log
+    name: build/bankjwtservice-qa.log
   pattern:
     file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
 
