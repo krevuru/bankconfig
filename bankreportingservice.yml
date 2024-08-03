@@ -5,6 +5,10 @@ spring:
   application:
     name: bankreportingservice
 
+bank:
+  management:
+    url: http://bankmanagementservice
+
 management:
   endpoints:
     web:
