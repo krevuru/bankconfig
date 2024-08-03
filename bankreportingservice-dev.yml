@@ -12,4 +12,7 @@ logging:
   pattern:
     file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
 
-
+  thymeleaf:
+    template-loader-path: classpath:/templates
+    suffix: .html
+    cache: false
