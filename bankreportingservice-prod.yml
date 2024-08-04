@@ -3,6 +3,12 @@ eureka:
     service-url:
       defaultZone: http://localhost:7000/eureka/
 
+bank:
+  security:
+    url: http://localhost:7001
+    username: krevuru@gmail.com
+    password: password1
+
 logging:
   level:
     com:
