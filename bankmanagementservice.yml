@@ -13,4 +13,4 @@ management:
 
 bank:
   security:
-    url: http://bankjwtservice
+    url: http://BANKJWTSERVICE

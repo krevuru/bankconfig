@@ -5,7 +5,7 @@ eureka:
 
 bank:
   security:
-    url: http://bankjwtservice
+    url: http://BANKJWTSERVICE
     username: krevuru@gmail.com
     password: password1
 
