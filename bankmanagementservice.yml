@@ -10,3 +10,7 @@ management:
     web:
       exposure:
         include: refresh
+
+bank:
+  security:
+    url: http://bankjwtservice
