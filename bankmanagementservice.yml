@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: bankmanagementservice
+  zipkin:
+    base-url: http://172.22.147.179:9411
 
 management:
   endpoints:
@@ -13,6 +15,9 @@ management:
   endpoint:
     health:
       show-details: always
+  tracing:
+    sampling:
+      probability: 1.0
 
 bank:
   security:

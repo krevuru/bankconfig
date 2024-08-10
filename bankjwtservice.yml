@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: bankjwtservice
+  zipkin:
+    base-url: http://172.22.147.179:9411
 
 management:
   endpoints:
