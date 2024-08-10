@@ -6,7 +6,10 @@ spring:
     name: bankjwtservice
   zipkin:
     base-url: http://172.22.147.179:9411
-
+  sleuth:
+    web:
+      client:
+        enabled: true
 management:
   endpoints:
     web:

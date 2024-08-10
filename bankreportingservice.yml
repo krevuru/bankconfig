@@ -6,6 +6,10 @@ spring:
     name: bankreportingservice
   zipkin:
     base-url: http://172.22.147.179:9411
+  sleuth:
+    web:
+      client:
+        enabled: true
 
 bank:
   management:
