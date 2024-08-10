@@ -2,9 +2,16 @@ server:
   port: '7002'
 
 management:
-  security:
-    enabled: false
   endpoints:
     web:
       exposure:
-        include: refresh
+        include: refresh, info,health,metrics,loggers,beans,mappings,threaddump,env,caches,prometheus
+  endpoint:
+    health:
+      show-details: always
+  tracing:
+    sampling:
+      probability: 1.0
+  zipkin:
+    tracing:
+      endpoint: http://172.22.147.179:9411/api/v2/spans
