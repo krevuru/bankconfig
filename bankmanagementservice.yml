@@ -9,7 +9,10 @@ management:
   endpoints:
     web:
       exposure:
-        include: refresh
+        include: refresh, info,health,metrics,loggers,beans,mappings,threaddump,env,caches,prometheus
+  endpoint:
+    health:
+      show-details: always
 
 bank:
   security:
