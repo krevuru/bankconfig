@@ -5,7 +5,7 @@ spring:
   application:
     name: bankreportingservice
   zipkin:
-    base-url: (link unavailable)
+    base-url: http://172.22.147.179:9411
   sleuth:
     web:
       client:
