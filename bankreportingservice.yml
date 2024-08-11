@@ -5,11 +5,18 @@ spring:
   application:
     name: bankreportingservice
   zipkin:
-    base-url: http://172.22.147.179:9411
+    base-url: (link unavailable)
   sleuth:
     web:
       client:
         enabled: true
+  cloud:
+    loadbalancer:
+      eureka:
+        enabled: true
+      ribbon:
+        eureka:
+          enabled: true
 
 bank:
   management:
