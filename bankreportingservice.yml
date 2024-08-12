@@ -20,7 +20,7 @@ spring:
 
 bank:
   management:
-    url: http://bankmanagementservice
+    url: lb://bankmanagementservice
 
 management:
   endpoints:
